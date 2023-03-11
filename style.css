@@ -40,29 +40,39 @@ svg {
 
 div svg.down {
     visibility:visible;
+    opacity: 1;
+     transition: .2s;
 }
 
 div:hover >svg.down {
     visibility:hidden;
+    opacity: 0;
 }
 
 div svg.up {
     visibility:hidden;
+    opacity: 0;
+     transition: .2s;
 }
 
 div:hover >svg.up {
     visibility:visible;
+    opacity: 1;
 }
 
 div img {
      position:absolute;
      visibility:hidden;
+     opacity: 0;
+     transition: .4s;
  }
 
  div:hover >img {
      visibility:visible;
      display: flex;
      justify-content: center;
+     opacity: 1;
+
  }
  
 
