@@ -2,7 +2,7 @@ body {
 background-image: url(./assets/1631537057129725778.jpg);  
 background-repeat: no-repeat;
 background-position: top;
-background-size: auto;
+background-size: cover;
 background-attachment: fixed;
 margin: 0;
 }
@@ -11,28 +11,29 @@ header {
     background: linear-gradient(180deg, #17120e, #544037);
     border-bottom: 1px solid #99806c;
     font-size: 50px;
-    position: relative;
     display: flex;
     justify-content: center;
     color: #b9b9b9;
     padding: 10px;
 }
 
-main {
+div.main {
     font-size: 30px;
     color: #b9b9b9;
-    
+    margin: 25%;
+
 }
 
-main:hover {
+div.main:hover {
     color: #99806c;
     cursor: pointer;
-   
+}
+div.onClick {
+    display: flex;
 }
 
 svg {
     display: inline-block;
-    position: absolute;
     margin: 9px;
     width: 20px;
     height: 20px;
@@ -61,10 +62,11 @@ div:hover >svg.up {
 }
 
 div img {
-     position:absolute;
      visibility:hidden;
      opacity: 0;
      transition: .4s;
+     height: 50%;
+     width: 50%;
  }
 
  div:hover >img {
@@ -75,32 +77,3 @@ div img {
 
  }
  
-
-
-
-
-
-
-
-
-
-
-
- @media (max-width: 1920px) { 
-   body { width: 1920px;
-    height: 1080px;
-   }
-}
-
-@media (max-width: 820px) { 
-    body { width: 820px;
-        height: 1180px;
-       }
-}
-
-@media (max-width: 320px) { 
-    body { width: 320px;
-        height: 568px;
-       }
-}
-
